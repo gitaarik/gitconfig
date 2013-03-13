@@ -2,3 +2,5 @@
     name = Rik
 [diff]
     tool = vimdiff
+[core]
+    editor = vim
