@@ -1,0 +1,4 @@
+[user]
+    name = Rik
+[diff]
+    tool = vimdiff
