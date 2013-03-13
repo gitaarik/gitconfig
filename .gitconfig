@@ -1,6 +1,23 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
 [user]
     name = Rik
+
 [diff]
     tool = vimdiff
+
 [core]
     editor = vim
+
+[alias]
+    st = status
+    co = checkout
+    ls = ls-files
+    lg = log -p
+    dc = diff --cached
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    compactlog = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short
