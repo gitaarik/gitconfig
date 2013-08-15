@@ -4,20 +4,39 @@
     branch = auto
 
 [user]
-    name = Rik
+	name = Rik
+	email = gitaarik@gmail.com
 
 [diff]
     tool = vimdiff
+
+[difftool]
+    prompt = false
 
 [core]
     editor = vim
 
 [alias]
-    st = status
+    ad = add
+    br = branch
+    ci = commit
     co = checkout
-    ls = ls-files
-    lg = log -p
+    compactlog = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short
     dc = diff --cached
+    df = diff --name-status
+    di = diff
+    dt = difftool
+    fe = fetch
+    lg = log
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    compactlog = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short
+    ls = ls-files
+    mr = merge
+    pl = pull
+    ps = push
+    sh = stash
+    sl = log --oneline
+    st = status
+
+[push]
+	default = simple
