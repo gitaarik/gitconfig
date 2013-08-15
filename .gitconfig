@@ -37,6 +37,7 @@
     sh = stash
     sl = log --oneline
     st = status
+    rclone = clone --recursive
 
 [push]
     default = simple
