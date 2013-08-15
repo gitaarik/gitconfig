@@ -4,8 +4,8 @@
     branch = auto
 
 [user]
-	name = Rik
-	email = gitaarik@gmail.com
+    name = Rik
+    email = gitaarik@gmail.com
 
 [diff]
     tool = vimdiff
@@ -39,4 +39,4 @@
     st = status
 
 [push]
-	default = simple
+    default = simple
