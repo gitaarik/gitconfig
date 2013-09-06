@@ -18,26 +18,26 @@
 
 [alias]
     ad = add
+    ada = add --all
     br = branch
     ci = commit
+    cl = clone
+    clr = clone --recursive
     co = checkout
-    compactlog = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short
-    dc = diff --cached
-    df = diff --name-status
     di = diff
-    dt = difftool
+    dic = diff --cached
+    dif = diff --name-status
+    dit = difftool
     fe = fetch
     lg = log
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lgo = log --oneline
     ls = ls-files
     mr = merge
     pl = pull
+    plr = pull --recurse-submodules
     ps = push
     sh = stash
-    sl = log --oneline
     st = status
-    rclone = clone --recursive
 
 [push]
     default = simple
