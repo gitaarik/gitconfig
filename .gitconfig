@@ -31,10 +31,11 @@
     fe = fetch
     lg = log
     lgo = log --oneline
+    lgf = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%ar %Cgreenby %an%Creset -- %s'
     ls = ls-files
     mr = merge
     pl = pull
-    pla = pull --recurse-submodules && submodule update --recursive
+    pla = pull --recurse-submodules && submodule update --init --recursive
     ps = push
     sh = stash
     st = status
