@@ -38,6 +38,8 @@
     ps = push
     sh = stash
     st = status
+    sm = submodule
+    smu = submodule update --init --recursive
 
 [push]
     default = simple
