@@ -34,7 +34,7 @@
     ls = ls-files
     mr = merge
     pl = pull
-    plr = pull --recurse-submodules
+    pla = pull --recurse-submodules && submodule update --recursive
     ps = push
     sh = stash
     st = status
