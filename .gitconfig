@@ -10,6 +10,9 @@
 [branch]
     autosetuprebase = always
 
+[merge]
+    tool = vimdiff
+
 [diff]
     tool = vimdiff
 
@@ -37,6 +40,7 @@
     lgf = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%ar %Cgreenby %an%Creset -- %s'
     ls = ls-files
     mr = merge
+    mt = mergetool
     pl = pull
     pla = pull --recurse-submodules && submodule update --init --recursive
     ps = push
