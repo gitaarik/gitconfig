@@ -41,13 +41,14 @@
     ls = ls-files
     mr = merge
     mt = mergetool
-    pl = pull && submodule update --init --recursive
-    pla = pull --recurse-submodules && submodule update --init --recursive
+    pl = !git pull && git submodule update --init --recursive
+    pla = !git pull --recurse-submodules && git submodule update --init --recursive
     ps = push
     sh = stash
     st = status
     sm = submodule
     smu = submodule update --init --recursive
+	alias = config --get-regexp ^alias\\.
 
 [push]
     default = simple
