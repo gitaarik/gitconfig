@@ -31,6 +31,7 @@
     clr = clone --recursive
     co = checkout
     di = diff
+    dis = diff --staged
     dic = diff --cached
     dif = diff --name-status
     dit = difftool
@@ -45,10 +46,11 @@
     pla = !git pull --recurse-submodules && git submodule update --init --recursive
     ps = push
     sh = stash
-    st = status
+    st = status -sb
     sm = submodule
     smu = submodule update --init --recursive
 	alias = config --get-regexp ^alias\\.
+	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
 
 [push]
-    default = simple
+	default = tracking
