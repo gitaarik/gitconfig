@@ -42,8 +42,7 @@
     ls = ls-files
     mr = merge
     mt = mergetool
-    pl = !git pull && git submodule update --init --recursive
-    pla = !git pull --recurse-submodules && git submodule update --init --recursive
+    up = !git pull && git submodule update --init --recursive
     ps = push
     sh = stash
     st = status -sb
