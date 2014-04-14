@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $OSTYPE == "darwin12" ]]; then
+if [[ ${OSTYPE:0:6} == "darwin" ]]; then
     dir=$(dirname $0)
     path=$PWD${dir:1}
 else
@@ -8,3 +8,4 @@ else
 fi
 
 ln -s "$path"/.gitconfig ~/.gitconfig
+ln -s "$path"/.gitignore ~/.gitignore
