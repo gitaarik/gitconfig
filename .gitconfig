@@ -23,7 +23,6 @@
 [core]
     editor = vim
     excludesfile = ~/.gitignore
-    pager = less -FXi
 
 [alias]
     ad = add
