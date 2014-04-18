@@ -12,7 +12,7 @@
 
 [merge]
     tool = vimdiff
-	conflictstyle = diff3
+    conflictstyle = diff3
 
 [diff]
     tool = vimdiff
@@ -50,11 +50,11 @@
     st = status -sb
     sm = submodule
     smu = submodule update --init --recursive
-	alias = config --get-regexp ^alias\\.
-	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
+    alias = config --get-regexp ^alias\\.
+    springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
 
 [push]
-	default = tracking
+    default = tracking
 
 [pull]
     rebase = preserve
