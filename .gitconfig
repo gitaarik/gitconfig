@@ -33,6 +33,7 @@
     cl = clone
     clr = clone --recursive
     co = checkout
+    cp = cherry-pick
     di = diff
     dis = diff --staged
     dic = diff --cached
@@ -47,6 +48,7 @@
     mt = mergetool
     up = !git pull && git submodule update --init --recursive
     ps = push
+    pu = pull
     sh = stash
     st = status -sb
     sm = submodule

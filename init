@@ -9,3 +9,8 @@ fi
 
 ln -s "$path"/.gitconfig ~/.gitconfig
 ln -s "$path"/.gitignore ~/.gitignore
+
+if [ -d ~/.bash_plugins ]; then
+    cd ~/.bash_plugins
+    wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+fi
