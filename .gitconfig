@@ -24,6 +24,7 @@
     editor = vim
     excludesfile = ~/.gitignore
     trustctime = false
+    pager = less -x4
 
 [alias]
     ad = add
