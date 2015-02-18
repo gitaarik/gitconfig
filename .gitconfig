@@ -62,3 +62,7 @@
 
 [pull]
     rebase = preserve
+
+[rerere]
+    enabled = true
+    autoupdate = true
