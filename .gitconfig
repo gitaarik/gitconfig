@@ -31,6 +31,8 @@
     ada = add --all
     br = branch
     ci = commit
+    cip = commit -p
+    ca = commit --amend
     cl = clone
     clr = clone --recursive
     co = checkout
@@ -49,6 +51,7 @@
     mt = mergetool
     up = !git pull && git submodule update --init --recursive
     ps = push
+    pf = push -f
     pu = pull
     sh = stash
     st = status -sb
@@ -58,7 +61,7 @@
     springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
 
 [push]
-    default = tracking
+    default = simple
 
 [pull]
     rebase = preserve
