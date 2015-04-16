@@ -5,7 +5,7 @@
 
 [user]
     name = Rik
-    email = gitaarik@gmail.com
+    email = rik@intoparty.com
 
 [branch]
     autosetuprebase = always
@@ -32,7 +32,8 @@
     br = branch
     ci = commit
     cip = commit -p
-    ca = commit --amend
+    ca = commit -a
+    cam = commit --amend
     cl = clone
     clr = clone --recursive
     co = checkout
