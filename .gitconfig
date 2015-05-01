@@ -29,37 +29,38 @@
 [alias]
     ad = add
     ada = add --all
+    alias = config --get-regexp ^alias\\.
     br = branch
-    ci = commit
-    cip = commit -p
     ca = commit -a
     cam = commit --amend
+    ci = commit
+    cip = commit -p
     cl = clone
     clr = clone --recursive
     co = checkout
     cp = cherry-pick
     di = diff
-    dis = diff --staged
     dic = diff --cached
     dif = diff --name-status
+    dis = diff --staged
     dit = difftool
     fe = fetch
     lg = log
-    lgo = log --oneline
     lgf = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%ar %Cgreenby %an%Creset -- %s'
+    lgo = log --oneline
     ls = ls-files
     mr = merge
     mt = mergetool
-    up = !git pull && git submodule update --init --recursive
-    ps = push
     pf = push -f
+    ps = push
     pu = pull
+    rb = rebase
     sh = stash
-    st = status -sb
     sm = submodule
     smu = submodule update --init --recursive
-    alias = config --get-regexp ^alias\\.
     springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
+    st = status -sb
+    up = !git pull && git submodule update --init --recursive
 
 [push]
     default = simple
