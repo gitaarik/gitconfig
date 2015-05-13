@@ -30,6 +30,7 @@
     ad = add
     ada = add --all
     alias = config --get-regexp ^alias\\.
+    ap = apply --ignore-whitespace
     br = branch
     ca = commit -a
     cam = commit --amend
