@@ -42,7 +42,7 @@
     cp = cherry-pick
     di = diff
     dic = diff --cached
-    dif = diff --name-status
+    dif = diff --stat
     dis = diff --staged
     dit = difftool
     fe = fetch
@@ -54,6 +54,7 @@
     mt = mergetool
     pf = push -f
     ps = push
+    psu = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
     pu = pull
     rb = rebase
     sh = stash
