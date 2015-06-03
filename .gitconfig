@@ -32,6 +32,7 @@
     alias = config --get-regexp ^alias\\.
     ap = apply --ignore-whitespace
     br = branch
+    brd = branch -d
     ca = commit -a
     cam = commit --amend
     ci = commit
@@ -39,6 +40,7 @@
     cl = clone
     clr = clone --recursive
     co = checkout
+    cob = checkout -b
     cp = cherry-pick
     di = diff
     dic = diff --cached
