@@ -59,6 +59,7 @@
     psu = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
     pu = pull
     rb = rebase
+    rbc = rebase --continue
     sh = stash
     sm = submodule
     smu = submodule update --init --recursive
