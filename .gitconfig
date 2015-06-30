@@ -35,6 +35,7 @@
     brd = branch -d
     ca = commit -a
     cam = commit --amend
+    cm = commit -m
     ci = commit
     cip = commit -p
     cl = clone
