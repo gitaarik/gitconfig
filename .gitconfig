@@ -50,7 +50,7 @@
     dit = difftool
     fe = fetch
     lg = log
-    lgf = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%ar %Cgreenby %an%Creset -- %s'
+    lgf = log --graph --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%aD %Cgreenby %an%Creset -- %s'
     lgo = log --oneline
     ls = ls-files
     mr = merge
