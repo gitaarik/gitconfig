@@ -43,6 +43,7 @@
     co = checkout
     cob = checkout -b
     cp = cherry-pick
+    deleted = log --diff-filter=D --summary
     di = diff
     dic = diff --cached
     dif = diff --stat
@@ -53,7 +54,7 @@
     lgf = log --graph --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%aD %Cgreenby %an%Creset -- %s'
     lgo = log --oneline
     ls = ls-files
-    mr = merge
+	mr = merge
     mt = mergetool
     pf = push -f
     ps = push
