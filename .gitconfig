@@ -58,7 +58,7 @@
     mt = mergetool
     pf = push -f
     ps = push
-    psu = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
+    psu = !git push -u $(git config --get branch.$(git rev-parse --abbrev-ref HEAD).remote) $(git rev-parse --abbrev-ref HEAD)
     pu = pull
     rb = rebase
     rbi = rebase --interactive
@@ -69,6 +69,8 @@
     springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
     st = status -sb
     up = !git pull && git submodule update --init --recursive
+    weblink = !echo https://$(git remote get-url origin | cut -d '@' -f 2 | sed 's/:/\\//g' | cut -d '.' -f 1,2)/commit/$(git log -1 --format='%H')
+    wip = !git commit -am wip && git push
 
 [push]
     default = simple
