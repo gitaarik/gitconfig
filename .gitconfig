@@ -58,7 +58,7 @@
     mt = mergetool
     pf = push -f
     ps = push
-    psu = !git push -u $(git config --get branch.$(git rev-parse --abbrev-ref HEAD).remote) $(git rev-parse --abbrev-ref HEAD)
+    psu = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
     pu = pull
     rb = rebase
     rbi = rebase --interactive
