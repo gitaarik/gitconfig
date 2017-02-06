@@ -9,6 +9,7 @@
 
 [branch]
     autosetuprebase = always
+    autostash = true
 
 [merge]
     tool = vimdiff
@@ -43,6 +44,7 @@
     co = checkout
     cob = checkout -b
     cp = cherry-pick
+    h = rev-parse HEAD
     deleted = log --diff-filter=D --summary
     di = diff
     dic = diff --cached
