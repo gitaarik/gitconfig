@@ -1,19 +1,33 @@
-[color]
-    diff = auto
-    status = auto
-    branch = auto
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+    trustctime = false
+    pager = less -x 5,9
 
 [user]
     name = Rik
     email = gitaarik@gmail.com
 
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[color "status"]
+    added = green
+    changed = yellow bold
+    untracked = red bold
+
 [branch]
     autosetuprebase = always
-    autostash = true
 
 [merge]
     tool = vimdiff
     conflictstyle = diff3
+
+[rebase]
+    autoStash = true
+    autoSquash = true
 
 [diff]
     tool = vimdiff
@@ -21,11 +35,8 @@
 [difftool]
     prompt = false
 
-[core]
-    editor = vim
-    excludesfile = ~/.gitignore
-    trustctime = false
-    pager = less -x 5,9
+# [log]
+#     decorate = full
 
 [alias]
     ad = add
@@ -34,6 +45,13 @@
     ap = apply --ignore-whitespace
     br = branch
     brd = branch -d
+
+    # Get a diff from the common ancestors of the HEAD and the given <ref>
+    # Handy to see the changes that were made on a specific branch compared to
+    # another one.
+    # http://stackoverflow.com/a/38436974/1248175
+    brdi = "!f() { git diff \"$1\"...; }; f"
+
     ca = commit -a
     cam = commit --amend
     cm = commit -m
@@ -70,8 +88,16 @@
     smu = submodule update --init --recursive
     springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
     st = status -sb
+
+    # Update the repo and all submodules
     up = !git pull && git submodule update --init --recursive
+
+    # Get a weblink to the repo, you can supply a file to get the weblink to
+    # that specific file.
     wl = "!f() { link_start=https://$(git remote get-url origin | cut -d '@' -f 2 | sed 's/:/\\//g' | cut -d '.' -f 1,2); commit_hash=$(git log -1 --format='%H'); if [ -n \"$1\" ]; then echo \"$link_start\"/tree/\"$commit_hash\"/$(git ls-tree --full-name --name-only $commit_hash $(echo \"$1\" | sed 's/\\/$//')); else echo \"$link_start\"/commit/\"$commit_hash\"/; fi; }; f"
+
+    # Quick and dirty way of making a Work In Progress commit and push it (only
+    # use on private hack-branches).
     wip = !git commit -am wip && git push
 
 [push]
